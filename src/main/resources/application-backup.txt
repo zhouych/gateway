@@ -7,21 +7,21 @@ server:
   
 zuul:
   routes:
-    budget:
-      path: /budget/**
-      service-id: budget
+    security:
+      path: /security/**
+      service-id: security
     demo:
       path: /demo/**
       service-id: demo
+    budget:
+      path: /budget/**
+      service-id: budget
     form:
       path: /form/**
       service-id: form
     mdata:
       path: /mdata/**
       service-id: mdata
-    security:
-      path: /security/**
-      service-id: security
     workflow:
       path: /workflow/**
       service-id: workflow

@@ -10,23 +10,9 @@ zuul:
     security:
       path: /security/**
       service-id: security
-    demo:
-      path: /demo/**
-      service-id: demo
-    budget:
-      path: /budget/**
-      service-id: budget
-    form:
-      path: /form/**
-      service-id: form
-    mdata:
-      path: /mdata/**
-      service-id: mdata
-    workflow:
-      path: /workflow/**
-      service-id: workflow
     
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8000/eureka/
+      # 使用Eureka Server的集群环境
+      defaultZone: http://peer1:8001/eureka/,http://peer2:8002/eureka/,http://peer3:8003/eureka/
